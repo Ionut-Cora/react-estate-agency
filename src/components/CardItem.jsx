@@ -21,7 +21,7 @@ function CardItem(props) {
           component="img"
           height="140"
           image={props.image}
-          alt="green iguana"
+          alt="property image"
         />
         <CardContent>
           <Typography 
