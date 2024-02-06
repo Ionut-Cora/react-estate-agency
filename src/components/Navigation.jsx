@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../assets/icons/buildings.svg';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { orange } from '@mui/material/colors';
 
 const pages = ['sale', 'rent', 'about', 'contact'];
 
@@ -69,7 +70,7 @@ function Navigation(props) {
                                 display: { xs: 'none', md: 'flex' },
                                 fontWeight: 700,
                                 letterSpacing: '.1rem',
-                                color: `${props.textColor}`,
+                                color: orange[800],
                                 textDecoration: 'none'
                             }}
                         >
