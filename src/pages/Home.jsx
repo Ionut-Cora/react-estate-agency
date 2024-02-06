@@ -11,6 +11,7 @@ import ReviewsSection from '../components/ReviewsComponents/ReviewsSection';
 import ContactCardsSection from '../components/ContactPageComponents/ContactCardsSection';
 import Footer from '../components/Footer';
 import { grey } from '@mui/material/colors';
+import DiscoverSection from '../components/DiscoverSection';
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
             <AboutUsSection />
             <KeyContactSection />
         </Box>
+        <DiscoverSection />
         <WhyChooseUs />
         <Box sx={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(${reviewImg})`,
