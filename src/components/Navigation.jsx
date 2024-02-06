@@ -15,7 +15,7 @@ import { orange } from '@mui/material/colors';
 
 const pages = ['sale', 'rent', 'about', 'contact'];
 
-function Navigation(props) {
+function Navigation() {
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -46,8 +46,8 @@ function Navigation(props) {
     <ThemeProvider theme={darkTheme}>
         <AppBar 
             sx={{
-                position: `${props.navPosition}`,
-                backgroundColor: 'transparent', 
+                position: 'relative',
+                backgroundColor: orange[800], 
                 boxShadow: 'none'
             }}
         >
@@ -70,7 +70,7 @@ function Navigation(props) {
                                 display: { xs: 'none', md: 'flex' },
                                 fontWeight: 700,
                                 letterSpacing: '.1rem',
-                                color: orange[800],
+                                color: 'white',
                                 textDecoration: 'none'
                             }}
                         >
@@ -86,7 +86,6 @@ function Navigation(props) {
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
                             color="inherit"
-                            sx={{ color: `${props.textColor}` }}
                         >
                             <MenuIcon />
                         </IconButton>
@@ -161,7 +160,7 @@ function Navigation(props) {
                             flexGrow: 1,
                             fontWeight: 700,
                             letterSpacing: '.1rem',
-                            color: `${props.textColor}`,
+                            color: 'white',
                             textDecoration: 'none'
                         }}
                     >
@@ -172,7 +171,7 @@ function Navigation(props) {
                             href='/' 
                             sx={{ 
                                 my: 2, 
-                                color: `${props.textColor}`,
+                                color: 'white',
                                 display: 'block',
                                 fontWeight: 'bold' 
                             }}
@@ -187,7 +186,7 @@ function Navigation(props) {
                                 href={`/${page}`}
                                 sx={{ 
                                     my: 2, 
-                                    color: `${props.textColor}`, 
+                                    color: 'white', 
                                     display: 'block',
                                     textAlign: 'center',
                                     fontWeight: 'bold' 

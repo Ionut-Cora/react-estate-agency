@@ -24,7 +24,7 @@ function SaleProperty() {
 
   return (
     <Box>
-      <Navigation navPosition='relative' textColor='black' />
+      <Navigation />
 
       {
         saleProperty ? (

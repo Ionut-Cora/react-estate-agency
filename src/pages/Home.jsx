@@ -16,7 +16,7 @@ import DiscoverSection from '../components/DiscoverSection';
 function Home() {
   return (
     <div>
-        <Navigation navPosition='absolute' textColor='inherit' />
+        <Navigation />
         <HeaderCarousel />
         <CardsSection />
         <Box sx={{

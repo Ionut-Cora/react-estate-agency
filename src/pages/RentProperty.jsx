@@ -21,7 +21,7 @@ function RentProperty() {
 
   return (
     <div>
-        <Navigation navPosition='relative' textColor='black' />
+        <Navigation />
 
         {
           rentProperty ? (

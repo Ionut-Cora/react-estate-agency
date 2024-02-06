@@ -11,7 +11,7 @@ import { grey } from '@mui/material/colors';
 function Contact() {
   return (
     <Box>
-        <Navigation navPosition='absolute' textColor='inherit' />
+        <Navigation />
         <SecondHeader title='Get in touch' img={ContactHeaderImg} />
         <Box sx={{
           backgroundColor: grey[100],

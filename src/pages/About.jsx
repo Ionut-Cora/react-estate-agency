@@ -11,7 +11,7 @@ import reviewImgAbout from '../assets/images/review-img-about.jpg';
 function About() {
   return (
     <Box>
-        <Navigation navPosition='absolute' textColor='inherit' />
+        <Navigation />
         <SecondHeader title='About us' img={AboutHeaderImg} />
         <WhyChooseUs />
         <Box sx={{

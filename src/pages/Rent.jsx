@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 function Rent() {
   return (
     <div>
-        <Navigation navPosition='absolute' textColor='inherit' />
+        <Navigation />
         <SecondHeader title='Rent a property' img={RentHeaderImg} />
         <Container>
             {

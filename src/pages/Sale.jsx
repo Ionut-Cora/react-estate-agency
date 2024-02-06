@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 function Sale() {
   return (
     <div>
-        <Navigation navPosition='absolute' textColor='inherit' />
+        <Navigation />
         <SecondHeader title='Properties for sale' img={SaleHeaderImg} />
         <Container>
           {
