@@ -24,7 +24,7 @@ function CardsSection() {
             flexWrap: 'wrap'
         }}>
             {
-                cardsItems.map( (item, i) => <CardItem key={i} item={item} title={item.title} address={item.address} price={item.price} image={item.img} url={item.url} /> )
+                cardsItems.map( (item, i) => <CardItem key={i} item={item} title={item.title} address={item.address} price={item.price} image={item.img} url={item.url} itemBedrooms={item.bedrooms} itemBathrooms={item.bathrooms} itemLivingrooms={item.livingrooms} /> )
             }
         </Box>
     </Container>

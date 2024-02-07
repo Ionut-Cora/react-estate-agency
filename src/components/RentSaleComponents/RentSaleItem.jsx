@@ -2,9 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Typography, Button, Divider } from '@mui/material';
 import { orange } from '@mui/material/colors';
-import BedOutlinedIcon from '@mui/icons-material/BedOutlined';
-import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
-import ChairOutlinedIcon from '@mui/icons-material/ChairOutlined';
+import PropertyIcons from '../PropertyIcons';
 
 function RentSaleItem(props) {
   return (
@@ -65,53 +63,7 @@ function RentSaleItem(props) {
                     alignItems: 'center',
                     justifyContent: 'space-between'
                 }}>
-                    <Box sx={{
-                        display: 'flex'
-                    }}>
-                        <Box sx={{
-                            display: 'flex'
-                        }}>
-                            <BedOutlinedIcon />
-                            <Typography 
-                                variant='body1'
-                                sx={{
-                                    fontWeight: 'bold',
-                                    marginLeft: '4px'
-                                }}
-                            >
-                                {props.itemBedrooms}
-                            </Typography>
-                        </Box>
-                        <Box sx={{
-                            display: 'flex',
-                            marginX: '1rem'
-                        }}>
-                            <BathtubOutlinedIcon />
-                            <Typography 
-                                variant='body1'
-                                sx={{
-                                    fontWeight: 'bold',
-                                    marginLeft: '4px'
-                                }}
-                            >
-                                {props.itemBathrooms}
-                            </Typography>
-                        </Box>
-                        <Box sx={{
-                            display: 'flex'
-                        }}>
-                            <ChairOutlinedIcon />
-                            <Typography 
-                                variant='body1'
-                                sx={{
-                                    fontWeight: 'bold',
-                                    marginLeft: '4px'
-                                }}
-                            >
-                                {props.itemLivingrooms}
-                            </Typography>
-                        </Box>
-                    </Box>
+                    <PropertyIcons bedrooms={props.itemBedrooms} bathrooms={props.itemBathrooms} livingrooms={props.itemLivingrooms} />
                     <Link to={`/${props.itemURL}property/${props.itemId}`}>
                         <Button 
                             variant='contained' 

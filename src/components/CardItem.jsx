@@ -4,7 +4,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import { red } from '@mui/material/colors';
+import { orange } from '@mui/material/colors';
+import { Box } from '@mui/system';
+import PropertyIcons from './PropertyIcons';
 
 function CardItem(props) {
   return (
@@ -29,7 +31,8 @@ function CardItem(props) {
             variant="body1" 
             component="div"
             sx={{
-                textTransform: 'capitalize'
+                textTransform: 'capitalize',
+                textAlign: 'center'
             }}
         >
             {props.title}
@@ -38,7 +41,8 @@ function CardItem(props) {
             variant="body2" 
             color="text.secondary"
             sx={{
-                textTransform: 'uppercase'
+                textTransform: 'uppercase',
+                textAlign: 'center'
             }}
         >
             {props.address}
@@ -48,11 +52,19 @@ function CardItem(props) {
             color="text.secondary"
             sx={{
                 fontWeight: 'bold',
-                color: red[500]
+                color: orange[800],
+                textAlign: 'center'
             }}
         >
             £{props.price}
           </Typography>
+          <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '1rem'
+          }}>
+            <PropertyIcons bedrooms={props.itemBedrooms} bathrooms={props.itemBathrooms} livingrooms={props.itemLivingrooms} />
+          </Box>
         </CardContent>
       </CardActionArea>
     </Card>

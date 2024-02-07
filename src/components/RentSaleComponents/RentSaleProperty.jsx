@@ -3,10 +3,7 @@ import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import ImageGallerySlider from '../ImageGallerySlider';
 import { orange } from '@mui/material/colors';
-import BedOutlinedIcon from '@mui/icons-material/BedOutlined';
-import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
-import ChairOutlinedIcon from '@mui/icons-material/ChairOutlined';
-// import MortgageCalculator from '../MortgageCalculator';
+import PropertyIcons from '../PropertyIcons';
 
 function RentSaleProperty(props) {
   return (
@@ -56,58 +53,9 @@ function RentSaleProperty(props) {
                   >
                       {props.propertyLongDescription}
                   </Typography>
-                  <Box sx={{
-                          display: 'flex'
-                      }}>
-                          <Box sx={{
-                              display: 'flex'
-                          }}>
-                              <BedOutlinedIcon />
-                              <Typography 
-                                  variant='body1'
-                                  sx={{
-                                      fontWeight: 'bold',
-                                      marginLeft: '4px'
-                                  }}
-                              >
-                                  {props.propertyBedrooms}
-                              </Typography>
-                          </Box>
-                          <Box sx={{
-                              display: 'flex',
-                              marginX: '1rem'
-                          }}>
-                              <BathtubOutlinedIcon />
-                              <Typography 
-                                  variant='body1'
-                                  sx={{
-                                      fontWeight: 'bold',
-                                      marginLeft: '4px'
-                                  }}
-                              >
-                                  {props.propertyBathrooms}
-                              </Typography>
-                          </Box>
-                          <Box sx={{
-                              display: 'flex'
-                          }}>
-                              <ChairOutlinedIcon />
-                              <Typography 
-                                  variant='body1'
-                                  sx={{
-                                      fontWeight: 'bold',
-                                      marginLeft: '4px'
-                                  }}
-                              >
-                                  {props.propertyLivingrooms}
-                              </Typography>
-                          </Box>
-                      </Box>
+                  <PropertyIcons bedrooms={props.propertyBedrooms} bathrooms={props.propertyBathrooms} livingrooms={props.propertyLivingrooms} />
                   </Box>
             </Box>
-
-            {/* <MortgageCalculator fullPropertyPrice={props.fullPrice} /> */}
-
         </Container>
     </Box>
   )
