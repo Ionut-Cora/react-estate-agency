@@ -25,7 +25,8 @@ function Contact() {
           marginY: '3rem'
         }}>
           <Box sx={{
-            width: { xs: '100%', md: '40%' }
+            width: { xs: '100%', md: '40%' },
+            paddingRight: { xs: 0, md: '1rem' }
           }}>
             <Typography 
               variant='h3'
