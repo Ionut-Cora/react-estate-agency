@@ -7,11 +7,11 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../assets/icons/buildings.svg';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { orange } from '@mui/material/colors';
+import { Link } from 'react-router-dom';
 
 const pages = ['sale', 'rent', 'about', 'contact'];
 
@@ -64,7 +64,7 @@ function Navigation() {
                             variant="h6"
                             noWrap
                             component="a"
-                            href="/"
+                            to="/"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
@@ -108,28 +108,26 @@ function Navigation() {
                             }}
                         >
                             <MenuItem>
-                                <Typography 
-                                    component='a' 
-                                    textAlign="center" 
-                                    href='/'
-                                    sx={{
+                                <Link 
+                                    to='/'
+                                    style={{
+                                        textAlign: 'center',
                                         color: 'white',
                                         textDecoration: 'none',
                                         textTransform: 'uppercase',
                                         fontWeight: 'bold'
                                     }}
                                 >
-                                    home
-                                </Typography>
+                                    Home
+                                </Link>
                             </MenuItem>
 
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography 
-                                        component='a' 
-                                        textAlign="center" 
-                                        href={`/${page}`}
-                                        sx={{
+                                    <Link 
+                                        to={`/${page}`}
+                                        style={{
+                                            textAlign: 'center',
                                             color: 'white',
                                             textDecoration: 'none',
                                             textTransform: 'uppercase',
@@ -137,7 +135,7 @@ function Navigation() {
                                         }}
                                     >
                                         {page}
-                                    </Typography>
+                                    </Link>
                                 </MenuItem>
                             ))}
 
@@ -153,7 +151,7 @@ function Navigation() {
                         variant="h5"
                         noWrap
                         component="a"
-                        href="/"
+                        to="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -166,33 +164,40 @@ function Navigation() {
                     >
                         React Agency
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'end' }}>
-                        <Button 
-                            href='/' 
-                            sx={{ 
-                                my: 2, 
+                    <Box 
+                        sx={{ 
+                            flexGrow: 1, 
+                            display: { xs: 'none', md: 'flex' }, 
+                            justifyContent: 'end',
+                            alignItems: 'center'
+                        }}>
+                        <Link 
+                            to='/'
+                            style={{
                                 color: 'white',
-                                display: 'block',
-                                fontWeight: 'bold' 
+                                fontWeight: 'bold',
+                                textTransform: 'uppercase',
+                                textDecoration: 'none'
                             }}
                         >
-                            Home
-                        </Button>
+                            home
+                        </Link>
 
                         {pages.map((page) => (
-                            <Button
+                            <Link 
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                href={`/${page}`}
-                                sx={{ 
-                                    my: 2, 
-                                    color: 'white', 
-                                    display: 'block',
-                                    textAlign: 'center',
-                                    fontWeight: 'bold' 
-                                }}>
+                                to={`/${page}`}
+                                style={{
+                                    color: 'white',
+                                    fontWeight: 'bold',
+                                    textTransform: 'uppercase',
+                                    marginLeft: '8px',
+                                    textDecoration: 'none'
+                                }}
+                            >
                                 {page}
-                            </Button>
+                            </Link>
                         ))}
 
                     </Box>
