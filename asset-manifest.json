@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-estate-agency/static/css/main.33c5db64.css",
+    "main.js": "/react-estate-agency/static/js/main.ec95ef71.js",
+    "static/js/787.d834ae17.chunk.js": "/react-estate-agency/static/js/787.d834ae17.chunk.js",
+    "static/media/review-img-about.jpg": "/react-estate-agency/static/media/review-img-about.6d873859be9497cbb4c3.jpg",
+    "static/media/sale-header-img.jpg": "/react-estate-agency/static/media/sale-header-img.ae60d46d74fed1290939.jpg",
+    "static/media/discover-img.jpg": "/react-estate-agency/static/media/discover-img.93732000b17015e3b7c7.jpg",
+    "static/media/about-header-img.jpg": "/react-estate-agency/static/media/about-header-img.13ed00000dd9342fa5b1.jpg",
+    "static/media/review-img.jpg": "/react-estate-agency/static/media/review-img.f4b64d12c4947c6b231b.jpg",
+    "static/media/rent-header-img.jpg": "/react-estate-agency/static/media/rent-header-img.f9e9450fabe3a5b3e2eb.jpg",
+    "static/media/contact-header-img.jpg": "/react-estate-agency/static/media/contact-header-img.7b6970c9a39088ceaaed.jpg",
+    "static/media/about-img.jpg": "/react-estate-agency/static/media/about-img.338ff422a843cb5a333f.jpg",
+    "static/media/person1.jpg": "/react-estate-agency/static/media/person1.2b24193a559d631f20ba.jpg",
+    "static/media/person2.jpg": "/react-estate-agency/static/media/person2.f6b8e61e2973e7064ad0.jpg",
+    "index.html": "/react-estate-agency/index.html",
+    "static/media/buildings.svg": "/react-estate-agency/static/media/buildings.87800f489508ab9636cf50908db97539.svg",
+    "main.33c5db64.css.map": "/react-estate-agency/static/css/main.33c5db64.css.map",
+    "main.ec95ef71.js.map": "/react-estate-agency/static/js/main.ec95ef71.js.map",
+    "787.d834ae17.chunk.js.map": "/react-estate-agency/static/js/787.d834ae17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33c5db64.css",
+    "static/js/main.ec95ef71.js"
+  ]
+}
