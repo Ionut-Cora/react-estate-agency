@@ -12,7 +12,7 @@ function Contact() {
   return (
     <Box>
         <Navigation />
-        <SecondHeader title='Get in touch' img={ContactHeaderImg} />
+        <SecondHeader title='Get in touch' img={ContactHeaderImg} imgPosition='center' direction='row-reverse' />
         <Box sx={{
           backgroundColor: grey[100],
           paddingY: '3rem'

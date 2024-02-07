@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
+import DiscoverCard from './DiscoverCard';
 
 function SecondHeaderItem(props) {
 
@@ -12,12 +13,12 @@ function SecondHeaderItem(props) {
         textTransform: 'capitalize',
         fontWeight: 'bold',
         color: red[500],
-        fontSize: '3rem',
+        fontSize: '2rem',
         '@media (min-width:600px)': {
-            fontSize: '4rem',
+            fontSize: '3rem',
         },
         [theme.breakpoints.up('md')]: {
-            fontSize: '5rem',
+            fontSize: '3rem',
         },
     };
 
@@ -27,19 +28,12 @@ function SecondHeaderItem(props) {
             height: '75vh',
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${props.secondHeaderImg})`,
             backgroundSize: 'cover', 
-            backgroundPosition: 'center', 
+            backgroundPosition: `${props.imgPosition}`, 
+            backgroundAttachment: 'fixed',
+            display: 'flex',
+            flexDirection: `${props.direction}`
         }}>
-            <Container sx={{
-                height: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }}>
-                <Typography variant='h1' >
-                    {props.secondHeaderTitle}
-                </Typography>
-
-            </Container>
+            <DiscoverCard name={props.secondHeaderTitle} variant='h1' displayType='none' direction={props.direction} />
         </Box>
     </ThemeProvider>
   )

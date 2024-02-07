@@ -67,6 +67,7 @@ function DiscoverCard(props) {
                             color: 'white',
                             borderColor: 'white',
                             textAlign: 'center',
+                            display: `${props.displayType}`,
                             '&:hover': {
                                 borderColor: 'white'
                             }

@@ -12,7 +12,7 @@ function About() {
   return (
     <Box>
         <Navigation />
-        <SecondHeader title='About us' img={AboutHeaderImg} />
+        <SecondHeader title='About us' img={AboutHeaderImg} imgPosition='center' />
         <WhyChooseUs />
         <Box sx={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(${reviewImgAbout})`,
