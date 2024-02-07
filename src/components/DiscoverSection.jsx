@@ -12,7 +12,7 @@ function DiscoverSection() {
         backgroundPosition: 'center',
         display: 'flex'
     }}>
-        <DiscoverCard variant='h5' name='Buy your first property' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, mollitia.' buttonTitle='Our properties' buttonLink='/sale' />
+        <DiscoverCard variant='h5' name='Buy your first property' description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, mollitia.' buttonTitle='Our properties' buttonLink='/#/sale' />
     </Box>
   )
 }
