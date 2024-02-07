@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography, Button, Divider, Link } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Box, Typography, Button, Divider } from '@mui/material';
 import { orange } from '@mui/material/colors';
 import BedOutlinedIcon from '@mui/icons-material/BedOutlined';
 import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
@@ -17,19 +18,18 @@ function RentSaleItem(props) {
             <Box sx={{
                 width: { xs: '100%', md: '50%' }
             }}>
-                <Link 
-                    variant='h2'
-                    component='a'
-                    href={`/${props.itemURL}property/${props.itemId}`}
-                    underline='none'
-                    sx={{
+                <Link
+                    to={`/${props.itemURL}property/${props.itemId}`}
+                    style={{textDecoration: 'none'}}
+                >
+                    <h2 style={{
                         fontSize: '1.4em',
                         fontWeight: 'bold',
                         color: 'black',
                         textTransform: 'capitalize'
-                    }}
-                >
-                    {props.itemTitle}
+                    }}>
+                        {props.itemTitle}
+                    </h2>
                 </Link>
                 <Typography 
                     variant='h3'
@@ -112,14 +112,15 @@ function RentSaleItem(props) {
                             </Typography>
                         </Box>
                     </Box>
-                    <Button 
-                        variant='contained' 
-                        color='warning' 
-                        size='large'
-                        href={`/${props.itemURL}property/${props.itemId}`}
-                    >
-                        Full details
-                    </Button>
+                    <Link to={`/${props.itemURL}property/${props.itemId}`}>
+                        <Button 
+                            variant='contained' 
+                            color='warning' 
+                            size='large'
+                        >
+                            Full details
+                        </Button>
+                    </Link>
                 </Box>
             </Box>
             <Box sx={{
@@ -127,16 +128,15 @@ function RentSaleItem(props) {
                 marginBottom: { xs: '2rem', md: '0' }
             }}>
                 <Link 
-                    component='a' 
-                    href={`/${props.itemURL}property/${props.itemId}`}
-                    sx={{
+                    to={`/${props.itemURL}property/${props.itemId}`}
+                    style={{
                         display: 'flex',
-                        justifyContent: { xs: 'center', md: 'end' }
+                        justifyContent: 'center'
                     }}
                 >
                     <img 
                         src={props.itemImg} 
-                        alt=""
+                        alt="property img"
                         style={{
                             height: 'fit-content', 
                             maxWidth: '75%'
