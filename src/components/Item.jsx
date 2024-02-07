@@ -24,6 +24,7 @@ function Item(props) {
                 backgroundImage: { xs: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${props.item.img})`, md: `linear-gradient(${props.item.gradient}),url(${props.item.img})` },
                 backgroundSize: 'cover', 
                 backgroundPosition: 'center', 
+                backgroundAttachment: 'fixed',
                 height: '100vh',
                 borderRadius: 0
             }}
