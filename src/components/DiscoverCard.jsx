@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Typography, Box } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -59,22 +60,23 @@ function DiscoverCard(props) {
                 <CardActions sx={{
                     padding: 0
                 }}>
-                    <Button 
-                        variant='outlined'
-                        href={props.buttonLink}
-                        sx={{
-                            marginTop: '2rem',
-                            color: 'white',
-                            borderColor: 'white',
-                            textAlign: 'center',
-                            display: `${props.displayType}`,
-                            '&:hover': {
-                                borderColor: 'white'
-                            }
-                        }}
-                    >
-                        {props.buttonTitle}
-                    </Button>
+                    <Link to={props.buttonLink} style={{textDecoration: 'none'}}>
+                        <Button 
+                            variant='outlined'
+                            sx={{
+                                marginTop: '2rem',
+                                color: 'white',
+                                borderColor: 'white',
+                                textAlign: 'center',
+                                display: `${props.displayType}`,
+                                '&:hover': {
+                                    borderColor: 'white'
+                                }
+                            }}
+                        >
+                            {props.buttonTitle}
+                        </Button>
+                    </Link>
                 </CardActions>
             </Card>
         </Box>

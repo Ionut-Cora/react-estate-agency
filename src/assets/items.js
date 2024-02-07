@@ -6,7 +6,7 @@ let items = [
         gradient: "to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35)",
         direction: "row",
         buttonTitle: "Contact us",
-        buttonLink: "/#/contact"
+        buttonLink: "/contact"
     },
     {
         name: "Stunning properties for rent",
@@ -15,7 +15,7 @@ let items = [
         gradient: "to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35)",
         direction: "row-reverse",
         buttonTitle: "Properties for rent",
-        buttonLink: "/#/rent"
+        buttonLink: "/rent"
     },
     {
         name: "Buy your own property today",
@@ -24,7 +24,7 @@ let items = [
         gradient: "rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)",
         direction: "row-reverse",
         buttonTitle: "Properties for sale",
-        buttonLink: "/#/sale"
+        buttonLink: "/sale"
     },
 ];
 
