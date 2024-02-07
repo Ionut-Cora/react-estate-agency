@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Box, Button, Container, Typography } from '@mui/material';
 import AboutImg from '../assets/images/about-img.jpg';
 
@@ -34,14 +35,14 @@ function AboutUsSection() {
                     <Box sx={{
                         marginTop: '1rem'
                     }}>
-                        <Button 
-                            variant='contained' 
-                            component='a'
-                            href='/about'
-                            color='warning'
-                        >
-                            More about us
-                        </Button>
+                        <Link to='/about' >
+                            <Button 
+                                variant='contained'
+                                color='warning'
+                            >
+                                More about us
+                            </Button>
+                        </Link>
                     </Box>
                 </Box>
                 <Box 
