@@ -49,7 +49,7 @@ function MultiItemsCarousel() {
           ssr={true}
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={5000}
+          autoPlaySpeed={7000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
