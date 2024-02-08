@@ -29,7 +29,7 @@ function SecondHeaderItem(props) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${props.secondHeaderImg})`,
             backgroundSize: 'cover', 
             backgroundPosition: `${props.imgPosition}`, 
-            backgroundAttachment: 'fixed',
+            backgroundAttachment: { xs: 'unset', md: 'fixed' },
             display: 'flex',
             flexDirection: `${props.direction}`
         }}>
