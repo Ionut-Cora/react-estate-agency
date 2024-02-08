@@ -53,30 +53,30 @@ function Navigation() {
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Box sx={{display: 'flex'}}>
-                        <Box sx={{
-                            display: { xs: 'none', md: 'flex' },
-                            marginRight: '5px'
-                        }}>
-                            <img src={logo} alt="logo" />
-                        </Box>
-                        <Typography
-                            variant="h6"
-                            noWrap
-                            component="a"
-                            to="/"
-                            sx={{
-                                mr: 2,
+                    <Link to='/' style={{textDecoration: 'none'}}>
+                        <Box sx={{display: 'flex'}}>
+                            <Box sx={{
                                 display: { xs: 'none', md: 'flex' },
-                                fontWeight: 700,
-                                letterSpacing: '.1rem',
-                                color: 'white',
-                                textDecoration: 'none'
-                            }}
-                        >
-                            React Agency
-                        </Typography>
-                    </Box>
+                                marginRight: '5px'
+                            }}>
+                                <img src={logo} alt="logo" />
+                            </Box>
+                            <Typography
+                                variant="h6"
+                                noWrap
+                                sx={{
+                                    mr: 2,
+                                    display: { xs: 'none', md: 'flex' },
+                                    fontWeight: 700,
+                                    letterSpacing: '.1rem',
+                                    color: 'white',
+                                    textDecoration: 'none'
+                                }}
+                            >
+                                React Agency
+                            </Typography>
+                        </Box>
+                    </Link>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -141,29 +141,42 @@ function Navigation() {
 
                         </Menu>
                     </Box>
-                    <Box sx={{
-                        display: { xs: 'flex', md: 'none' },
-                        marginRight: '5px'
-                    }}>
-                        <img src={logo} alt="logo" />
-                    </Box>
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        to="/"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontWeight: 700,
-                            letterSpacing: '.1rem',
-                            color: 'white',
-                            textDecoration: 'none'
+                    <Link 
+                        to='/' 
+                        style={{
+                            textDecoration: 'none', 
+                            width: '100%',
+                            display: 'flex',
+                            justifyContent: 'center'
                         }}
                     >
-                        React Agency
-                    </Typography>
+                        <Box sx={{
+                            display: { xs: 'flex', md: 'none' },
+                            justifyContent: 'center'
+                        }}>
+                            <Box sx={{
+                                display: { xs: 'flex', md: 'none' },
+                                marginRight: '5px'
+                            }}>
+                                <img src={logo} alt="logo" />
+                            </Box>
+                            <Typography
+                                variant="h5"
+                                noWrap
+                                sx={{
+                                    mr: 2,
+                                    display: { xs: 'flex', md: 'none' },
+                                    flexGrow: 1,
+                                    fontWeight: 700,
+                                    letterSpacing: '.1rem',
+                                    color: 'white',
+                                    textDecoration: 'none'
+                                }}
+                            >
+                                React Agency
+                            </Typography>
+                        </Box>
+                    </Link>
                     <Box 
                         sx={{ 
                             flexGrow: 1, 
