@@ -1,3 +1,7 @@
+# React JS Estate Agency Website - Material UI
+
+## View live website: https://ionut-cora.github.io/react-estate-agency/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
