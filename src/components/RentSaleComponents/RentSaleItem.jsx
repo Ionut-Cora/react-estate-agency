@@ -90,7 +90,7 @@ function RentSaleItem(props) {
                         src={props.itemImg} 
                         alt="property img"
                         style={{
-                            height: 'fit-content', 
+                            height: 'auto', 
                             maxWidth: '75%'
                         }}
                     />
