@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { orange } from '@mui/material/colors';
 import { Box } from '@mui/system';
-import PropertyIcons from './PropertyIcons';
+import PropertyIcons from '../PropertyIcons';
 
 function CardItem(props) {
   return (

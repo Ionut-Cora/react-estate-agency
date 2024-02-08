@@ -4,7 +4,6 @@ import Navigation from '../components/Navigation';
 import HeaderCarousel from '../components/HeaderCarousel';
 import AboutUsSection from '../components/AboutUsSection';
 import reviewImg from '../assets/images/review-img.jpg';
-import CardsSection from '../components/CardsSection';
 import KeyContactSection from '../components/KeyContactSection';
 import WhyChooseUs from '../components/WhyChooseUsComponents/WhyChooseUs';
 import ReviewsSection from '../components/ReviewsComponents/ReviewsSection';
@@ -12,13 +11,15 @@ import ContactCardsSection from '../components/ContactPageComponents/ContactCard
 import Footer from '../components/Footer';
 import { grey } from '@mui/material/colors';
 import DiscoverSection from '../components/DiscoverSection';
+import MultiItemsCarousel from '../components/MultiItemsCarousel/MultiItemsCarousel';
 
 function Home() {
   return (
     <div>
         <Navigation />
-        <HeaderCarousel />
-        <CardsSection />
+        <Box sx={{backgroundColor: grey[100]}}>
+          <HeaderCarousel />
+        </Box>
         <Box sx={{
             backgroundColor: grey[100],
             paddingY: '3rem'
@@ -26,6 +27,7 @@ function Home() {
             <AboutUsSection />
             <KeyContactSection />
         </Box>
+        <MultiItemsCarousel />
         <DiscoverSection />
         <WhyChooseUs />
         <Box sx={{
