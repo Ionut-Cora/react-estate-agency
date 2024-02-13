@@ -2,6 +2,17 @@
 
 ## View live website: https://ionut-cora.github.io/react-estate-agency/
 
+<img src="React JS Estate Agency Template Website Material UI.jpg" alt="React JS Estate Agency Template Website Material UI" />
+
+## For this website I used:
+- [React JS](https://react.dev/) - JavaScript library
+- [Material UI](https://mui.com/) - React component library
+- [Unsplash](https://unsplash.com/) - Free images
+- [Google Fonts](https://fonts.google.com/) - Montserrat Family Font
+
+## This estate agency template website is a multi page custom demo website created with [React JS](https://react.dev/) and designed with [Material UI](https://mui.com/).
+The website contain 7 pages: Home, About, Rent, RentProperty, Sale, SaleProperty and Contact. Also contain many components like Navigation, Footer, Header, Carousel, Mortgage Calculator and many more.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
