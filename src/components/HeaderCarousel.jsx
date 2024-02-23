@@ -8,7 +8,7 @@ function HeaderCarousel() {
     <Carousel
         next={ (next, active) => (`${active}, ${next}`) }
         prev={ (prev, active) => (`${active}, ${prev}`) }
-        interval={70000}
+        interval={7000}
     >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
