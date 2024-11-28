@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-estate-agency/static/css/main.9c028647.css",
-    "main.js": "/react-estate-agency/static/js/main.30ff359a.js",
+    "main.css": "/react-estate-agency/static/css/main.62b563c4.css",
+    "main.js": "/react-estate-agency/static/js/main.9fd516ae.js",
     "static/js/787.d834ae17.chunk.js": "/react-estate-agency/static/js/787.d834ae17.chunk.js",
     "static/media/review-img-about.jpg": "/react-estate-agency/static/media/review-img-about.6d873859be9497cbb4c3.jpg",
     "static/media/sale-header-img.jpg": "/react-estate-agency/static/media/sale-header-img.ae60d46d74fed1290939.jpg",
@@ -18,12 +18,12 @@
     "static/media/revicons.woff": "/react-estate-agency/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/react-estate-agency/index.html",
     "static/media/buildings.svg": "/react-estate-agency/static/media/buildings.87800f489508ab9636cf50908db97539.svg",
-    "main.9c028647.css.map": "/react-estate-agency/static/css/main.9c028647.css.map",
-    "main.30ff359a.js.map": "/react-estate-agency/static/js/main.30ff359a.js.map",
+    "main.62b563c4.css.map": "/react-estate-agency/static/css/main.62b563c4.css.map",
+    "main.9fd516ae.js.map": "/react-estate-agency/static/js/main.9fd516ae.js.map",
     "787.d834ae17.chunk.js.map": "/react-estate-agency/static/js/787.d834ae17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c028647.css",
-    "static/js/main.30ff359a.js"
+    "static/css/main.62b563c4.css",
+    "static/js/main.9fd516ae.js"
   ]
 }
