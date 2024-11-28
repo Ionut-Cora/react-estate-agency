@@ -18,7 +18,7 @@ function DiscoverCard(props) {
         <Box sx={{
             height: '100%',
             width: '50%',
-            backgroundColor: { xs: '', sm: 'rgba(255, 255, 255, 0.75)' }
+            backgroundColor: { xs: '', sm: 'rgba(255, 255, 255, 0.5)' }
         }}>
             <Card sx={{ 
                 minWidth: { xs: '200px', sm: '275px' },
@@ -42,7 +42,8 @@ function DiscoverCard(props) {
                         sx={{
                             textTransform: 'capitalize',
                             color: 'white',
-                            marginBottom: '1rem'
+                            marginBottom: '1rem',
+                            letterSpacing: '1px'
                         }}
                     >
                         {props.name}
