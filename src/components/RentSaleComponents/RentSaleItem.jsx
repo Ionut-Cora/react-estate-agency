@@ -60,6 +60,7 @@ function RentSaleItem(props) {
                 </Typography>
                 <Box sx={{
                     display: 'flex',
+                    flexDirection: { xs: 'column', sm: 'row' },
                     alignItems: 'center',
                     justifyContent: 'space-between'
                 }}>
@@ -69,6 +70,9 @@ function RentSaleItem(props) {
                             variant='contained' 
                             color='warning' 
                             size='large'
+                            sx={{
+                                marginTop: { xs: '20px', sm: 0 }
+                            }}
                         >
                             Full details
                         </Button>

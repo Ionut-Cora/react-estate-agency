@@ -7,7 +7,8 @@ import ChairOutlinedIcon from '@mui/icons-material/ChairOutlined';
 function PropertyIcons(props) {
   return (
     <Box sx={{
-        display: 'flex'
+        display: 'flex',
+        marginTop: { xs: '20px', sm: 0 }
     }}>
         <Box sx={{
             display: 'flex'
