@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navigation.css';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -115,7 +116,9 @@ function Navigation() {
                                         color: 'white',
                                         textDecoration: 'none',
                                         textTransform: 'uppercase',
-                                        fontWeight: 'bold'
+                                        fontWeight: 'bold',
+                                        padding: '5px',
+                                        letterSpacing: '1px'
                                     }}
                                 >
                                     Home
@@ -131,7 +134,9 @@ function Navigation() {
                                             color: 'white',
                                             textDecoration: 'none',
                                             textTransform: 'uppercase',
-                                            fontWeight: 'bold'
+                                            fontWeight: 'bold',
+                                            padding: '5px',
+                                            letterSpacing: '1px'
                                         }}
                                     >
                                         {page}
@@ -152,7 +157,8 @@ function Navigation() {
                     >
                         <Box sx={{
                             display: { xs: 'flex', md: 'none' },
-                            justifyContent: 'center'
+                            justifyContent: 'center',
+                            alignItems: 'center'
                         }}>
                             <Box sx={{
                                 display: { xs: 'flex', md: 'none' },
@@ -167,6 +173,7 @@ function Navigation() {
                                     mr: 2,
                                     display: { xs: 'flex', md: 'none' },
                                     flexGrow: 1,
+                                    fontSize: '16px',
                                     fontWeight: 700,
                                     letterSpacing: '.1rem',
                                     color: 'white',
@@ -190,7 +197,8 @@ function Navigation() {
                                 color: 'white',
                                 fontWeight: 'bold',
                                 textTransform: 'uppercase',
-                                textDecoration: 'none'
+                                textDecoration: 'none',
+                                letterSpacing: '1px'
                             }}
                         >
                             home
@@ -205,8 +213,9 @@ function Navigation() {
                                     color: 'white',
                                     fontWeight: 'bold',
                                     textTransform: 'uppercase',
-                                    marginLeft: '8px',
-                                    textDecoration: 'none'
+                                    marginLeft: '15px',
+                                    textDecoration: 'none',
+                                    letterSpacing: '1px'
                                 }}
                             >
                                 {page}
