@@ -59,16 +59,25 @@ function DiscoverCard(props) {
                     </Typography>
                 </CardContent>
                 <CardActions sx={{
-                    padding: 0
+                    padding: 0,
+                    width: '100%'
                 }}>
-                    <Link to={props.buttonLink} style={{textDecoration: 'none'}}>
+                    <Link 
+                        to={props.buttonLink} 
+                        style={{
+                            textDecoration: 'none',
+                            marginLeft: 'auto',
+                            marginRight: 'auto'
+                        }}
+                    >
                         <Button 
                             variant='outlined'
                             sx={{
-                                marginTop: '2rem',
+                                marginTop: '1rem',
                                 color: 'white',
                                 borderColor: 'white',
                                 textAlign: 'center',
+                                textTransform: 'none',
                                 display: `${props.displayType}`,
                                 '&:hover': {
                                     borderColor: 'white'
