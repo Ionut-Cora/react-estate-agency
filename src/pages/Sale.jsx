@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 function Sale() {
   return (
-    <div>
+    <div className='App'>
         <Navigation />
         <SecondHeader title='Properties for sale' img={SaleHeaderImg} imgPosition='bottom' />
         <Container>

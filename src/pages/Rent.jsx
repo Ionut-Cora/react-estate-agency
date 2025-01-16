@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 function Rent() {
   return (
-    <div>
+    <div className='App'>
         <Navigation />
         <SecondHeader title='Rent a property' img={RentHeaderImg} imgPosition='bottom' direction='row-reverse' />
         <Container>

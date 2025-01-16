@@ -20,9 +20,8 @@ function RentProperty() {
   }, [id])
 
   return (
-    <div>
+    <div className='App'>
         <Navigation />
-
         {
           rentProperty ? (
             <RentSaleProperty propertyAddress={rentProperty.address} propertyImage={rentProperty.image1} propertyImages={rentProperty.images} propertyPrice={rentProperty.price} propertyLongDescription={rentProperty.longDescription} propertyBedrooms={rentProperty.bedrooms} propertyBathrooms={rentProperty.bathrooms} propertyLivingrooms={rentProperty.livingrooms} />
@@ -30,7 +29,6 @@ function RentProperty() {
             null
           )
         }
-
         <Footer />
     </div>
   )

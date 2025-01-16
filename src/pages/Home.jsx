@@ -15,7 +15,7 @@ import MultiItemsCarousel from '../components/MultiItemsCarousel/MultiItemsCarou
 
 function Home() {
   return (
-    <div>
+    <div className='App'>
         <Navigation />
         <Box sx={{backgroundColor: grey[100]}}>
           <HeaderCarousel />

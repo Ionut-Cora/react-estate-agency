@@ -10,45 +10,47 @@ import { grey } from '@mui/material/colors';
 
 function Contact() {
   return (
-    <Box>
-        <Navigation />
-        <SecondHeader title='Get in touch' img={ContactHeaderImg} imgPosition='center' direction='row-reverse' />
-        <Box sx={{
-          backgroundColor: grey[100],
-          paddingY: '3rem'
-        }}>
-          <ContactCardsSection />
-        </Box>
-        <Container sx={{
-          display: 'flex',
-          flexDirection: { xs: 'column', md: 'row' },
-          marginY: '3rem'
-        }}>
+    <div className="App">
+      <Box>
+          <Navigation />
+          <SecondHeader title='Get in touch' img={ContactHeaderImg} imgPosition='center' direction='row-reverse' />
           <Box sx={{
-            width: { xs: '100%', md: '40%' },
-            paddingRight: { xs: 0, md: '1rem' }
+            backgroundColor: grey[100],
+            paddingY: '3rem'
           }}>
-            <Typography 
-              variant='h3'
-              sx={{
-                fontSize: '1.5rem'
-              }}
-            >
-              Contact
-            </Typography>
-            <Typography 
-              variant='h2'
-              sx={{
-                fontSize: '3.5rem'
-              }}
-            >
-              Send a message
-            </Typography>
+            <ContactCardsSection />
           </Box>
-          <ContactForm />
-        </Container>
-        <Footer />
-    </Box>
+          <Container sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', md: 'row' },
+            marginY: '3rem'
+          }}>
+            <Box sx={{
+              width: { xs: '100%', md: '40%' },
+              paddingRight: { xs: 0, md: '1rem' }
+            }}>
+              <Typography 
+                variant='h3'
+                sx={{
+                  fontSize: '1.5rem'
+                }}
+              >
+                Contact
+              </Typography>
+              <Typography 
+                variant='h2'
+                sx={{
+                  fontSize: '3.5rem'
+                }}
+              >
+                Send a message
+              </Typography>
+            </Box>
+            <ContactForm />
+          </Container>
+          <Footer />
+      </Box>
+    </div>
   )
 }
 

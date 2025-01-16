@@ -23,23 +23,23 @@ function SaleProperty() {
   }, [id])
 
   return (
-    <Box>
-      <Navigation />
-
-      {
-        saleProperty ? (
-          <Box>
-            <RentSaleProperty propertyAddress={saleProperty.address} propertyImage={saleProperty.image1} propertyImages={saleProperty.images} propertyPrice={saleProperty.price} propertyLongDescription={saleProperty.longDescription} propertyBedrooms={saleProperty.bedrooms} propertyBathrooms={saleProperty.bathrooms} propertyLivingrooms={saleProperty.livingrooms} />
-  
-            <MortgageCalculator fullPropertyPrice={saleProperty.price} />
-          </Box>
-        ) : (
-          null
-        )
-      }
-      
-      <Footer />
-    </Box>
+    <div className="App">
+      <Box>
+        <Navigation />
+        {
+          saleProperty ? (
+            <Box>
+              <RentSaleProperty propertyAddress={saleProperty.address} propertyImage={saleProperty.image1} propertyImages={saleProperty.images} propertyPrice={saleProperty.price} propertyLongDescription={saleProperty.longDescription} propertyBedrooms={saleProperty.bedrooms} propertyBathrooms={saleProperty.bathrooms} propertyLivingrooms={saleProperty.livingrooms} />
+    
+              <MortgageCalculator fullPropertyPrice={saleProperty.price} />
+            </Box>
+          ) : (
+            null
+          )
+        }
+        <Footer />
+      </Box>
+    </div>
   )
 }
 
