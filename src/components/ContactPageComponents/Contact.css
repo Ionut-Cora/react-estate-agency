@@ -1,0 +1,13 @@
+#contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #ed6c02;
+}
+
+#contact-form .Mui-focused {
+    color: #ed6c02;
+}
