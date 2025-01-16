@@ -1,21 +1,21 @@
 const reviews = [
     {
         label: 'John Smith',
-        description: `For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more.`,
+        description: `Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
         img: './assets/images/person1.jpg',
         rating: 4
     },
     {
         label: 'Maria Cruz',
-        description: 'An ad group contains one or more ads which target a shared set of keywords.',
+        description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
         img: './assets/images/person2.jpg',
         rating: 5
     },
     {
         label: 'Kevin Bloom',
-        description: `Try out different ad text to see what brings in the most customers,and learn how to enhance your ads using features like ad extensions. If you run into any problems with your ads, find out how to tell if they're running and how to resolve approval issues.`,
+        description: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.`,
         img: './assets/images/person3.jpg',
-        rating: 2
+        rating: 3
     },
 ];
 

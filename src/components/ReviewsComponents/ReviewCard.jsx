@@ -14,7 +14,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 function ReviewCard() {
 
-    const theme = useTheme();
+  const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = reviews.length;
 
