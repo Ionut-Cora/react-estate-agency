@@ -1,3 +1,7 @@
+.review-carousel .MuiBox-root {
+    height: auto;
+}
+
 .review-carousel .MuiMobileStepper-dotActive {
     background-color: #ed6c02;
 }
