@@ -39,6 +39,9 @@ function AboutUsSection() {
                             <Button 
                                 variant='contained'
                                 color='warning'
+                                sx={{
+                                    textTransform: 'none'
+                                }}
                             >
                                 More about us
                             </Button>

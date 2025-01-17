@@ -71,7 +71,8 @@ function RentSaleItem(props) {
                             color='warning' 
                             size='large'
                             sx={{
-                                marginTop: { xs: '20px', sm: 0 }
+                                marginTop: { xs: '20px', sm: 0 },
+                                textTransform: 'none'
                             }}
                         >
                             Full details
