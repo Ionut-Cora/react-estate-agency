@@ -8,7 +8,8 @@ function PropertyIcons(props) {
   return (
     <Box sx={{
         display: 'flex',
-        marginTop: { xs: '20px', sm: 0 }
+        justifyContent: 'center',
+        marginTop: '15px'
     }}>
         <Box sx={{
             display: 'flex'
