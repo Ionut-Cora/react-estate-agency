@@ -14,7 +14,7 @@ function KeyContactCard(props) {
         borderRadius: '12px',
         boxShadow: 1,
         fontWeight: 'bold',
-        width: { xs: '100%', sm: '40%', md: '30%', lg: '45%' },
+        width: { xs: '62%', sm: '40%', md: '30%', lg: '45%' },
         marginBottom: { xs: '2rem', md: 0 }
       }}
     >
