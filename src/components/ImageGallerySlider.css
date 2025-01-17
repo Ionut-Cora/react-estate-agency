@@ -1,0 +1,11 @@
+.image-gallery-icon:hover polyline,
+.image-gallery-icon:hover path {
+    color: #ed6c02;
+}
+
+.image-gallery-thumbnails-container .image-gallery-thumbnail.active,
+.image-gallery-thumbnails-container .image-gallery-thumbnail:focus,
+.image-gallery-thumbnails-container .image-gallery-thumbnail:active,
+.image-gallery-thumbnails-container .image-gallery-thumbnail:hover {
+    border: 2px solid #ed6c02;
+}
