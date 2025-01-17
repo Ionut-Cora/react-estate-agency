@@ -1,0 +1,7 @@
+#mortgage-calculator .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #ed6c02;
+}
+
+#mortgage-calculator .Mui-focused {
+    color: #ed6c02;
+}

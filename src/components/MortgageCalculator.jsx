@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './MortgageCalculator.css';
 import { Box, Button, Container, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -53,6 +54,7 @@ function MortgageCalculator(props) {
             width: { xs: '100%', md: '50%' }
         }}>
             <form 
+                id="mortgage-calculator"
                 style={{
                     display: 'flex',
                     flexDirection: 'column'
@@ -145,6 +147,9 @@ function MortgageCalculator(props) {
                         color='warning'
                         size='large'
                         type='submit'
+                        sx={{
+                            textTransform: 'none'
+                        }}
                     >
                         Submit
                     </Button>
@@ -154,6 +159,9 @@ function MortgageCalculator(props) {
                         color='warning'
                         size='large'
                         onClick={reload}
+                        sx={{
+                            textTransform: 'none'
+                        }}
                     >
                         Reload
                     </Button>
