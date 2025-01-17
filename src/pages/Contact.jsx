@@ -14,40 +14,34 @@ function Contact() {
       <Box>
           <Navigation />
           <SecondHeader title='Get in touch' img={ContactHeaderImg} imgPosition='center' direction='row-reverse' />
-          <Box sx={{
-            backgroundColor: grey[100],
-            paddingY: '3rem'
-          }}>
-            <ContactCardsSection />
-          </Box>
           <Container sx={{
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
             marginY: '3rem'
           }}>
             <Box sx={{
-              width: { xs: '100%', md: '40%' },
-              paddingRight: { xs: 0, md: '1rem' }
+              width: '100%'
             }}>
-              <Typography 
-                variant='h3'
-                sx={{
-                  fontSize: '1.5rem'
-                }}
-              >
-                Contact
-              </Typography>
               <Typography 
                 variant='h2'
                 sx={{
-                  fontSize: '3.5rem'
+                  fontSize: 'clamp(1.8rem, 1.3654rem + 0.9065vw, 2rem)',
+                  fontWeight: 'bold',
+                  textTransform: 'uppercase',
+                  marginBottom: '2rem'
                 }}
               >
                 Send a message
               </Typography>
+              <ContactForm />
             </Box>
-            <ContactForm />
           </Container>
+          <Box sx={{
+            backgroundColor: grey[100],
+            paddingY: '3rem'
+          }}>
+            <ContactCardsSection />
+          </Box>
           <Footer />
       </Box>
     </div>
