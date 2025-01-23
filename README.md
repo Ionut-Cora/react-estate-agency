@@ -2,15 +2,22 @@
 
 ## View live website: https://ionut-cora.github.io/react-estate-agency/
 
-<img src="React JS Estate Agency Template Website Material UI.jpg" alt="React JS Estate Agency Template Website Material UI" />
+<img src="percival_estate_agents.jpg" alt="React JS Percival Estate Agents" />
 
-## For this website I used:
+## Dependencies
 - [React JS](https://react.dev/) - JavaScript library
 - [Material UI](https://mui.com/) - React component library
+- [Font Awesome](https://fontawesome.com/) - Icon library
 - [Unsplash](https://unsplash.com/) - Free images
 - [Google Fonts](https://fonts.google.com/) - Montserrat Family Font
 
-## This estate agency template website is a multi page custom demo website created with [React JS](https://react.dev/) and designed with [Material UI](https://mui.com/).
+## Installation
+- git clone repo
+- npm install
+- npm start
+- [http://localhost:3000](http://localhost:3000) - open in your browser to see the project
+
+## The Percival Estate Agents template website is a multi page custom demo website created with [React JS](https://react.dev/) and designed with [Material UI](https://mui.com/).
 The website contain 7 pages: Home, About, Rent, RentProperty, Sale, SaleProperty and Contact. Also contain many components like Navigation, Footer, Header, Carousel, Mortgage Calculator and many more.
 
 # Getting Started with Create React App
