@@ -1,7 +1,7 @@
 let items = [
     {
-        name: "London estate agents",
-        description: "London Estate Agents specialising in property for sale and to rent in London. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, soluta.",
+        name: "Estate Agents in London - Percival Est.",
+        description: "Percival Est. specialising in property for sale and to rent in London. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, soluta.",
         img: "./assets/images/img12.jpg",
         bgPosition: "right",
         gradient: "to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35)",
