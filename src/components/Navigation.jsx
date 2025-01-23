@@ -1,5 +1,7 @@
 import React from 'react';
 import './Navigation.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,7 +11,6 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
-import logo from '../assets/icons/buildings.svg';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { orange } from '@mui/material/colors';
 import { Link } from 'react-router-dom';
@@ -17,9 +18,7 @@ import { Link } from 'react-router-dom';
 const pages = ['sale', 'rent', 'about', 'contact'];
 
 function Navigation() {
-
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
@@ -54,13 +53,19 @@ function Navigation() {
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Link to='/' style={{textDecoration: 'none'}}>
+                    <Link 
+                        to='/' 
+                        style={{
+                            textDecoration: 'none',
+                            color: '#FFFFFF'
+                        }}
+                    >
                         <Box sx={{display: 'flex'}}>
                             <Box sx={{
                                 display: { xs: 'none', md: 'flex' },
-                                marginRight: '5px'
+                                marginRight: '10px',
                             }}>
-                                <img src={logo} alt="logo" />
+                                <FontAwesomeIcon icon={faHouse} size='xl' />
                             </Box>
                             <Typography
                                 variant="h6"
@@ -71,14 +76,14 @@ function Navigation() {
                                     fontWeight: 700,
                                     letterSpacing: '.1rem',
                                     color: 'white',
-                                    textDecoration: 'none'
+                                    textDecoration: 'none',
+                                    textAlign: 'start'
                                 }}
                             >
-                                React Agency
+                                Percival Est.
                             </Typography>
                         </Box>
                     </Link>
-
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -124,7 +129,6 @@ function Navigation() {
                                     Home
                                 </Link>
                             </MenuItem>
-
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Link 
@@ -158,13 +162,14 @@ function Navigation() {
                         <Box sx={{
                             display: { xs: 'flex', md: 'none' },
                             justifyContent: 'center',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            color: '#FFFFFF'
                         }}>
                             <Box sx={{
                                 display: { xs: 'flex', md: 'none' },
-                                marginRight: '5px'
+                                marginRight: '10px'
                             }}>
-                                <img src={logo} alt="logo" />
+                                <FontAwesomeIcon icon={faHouse} size='xl' />
                             </Box>
                             <Typography
                                 variant="h5"
@@ -180,7 +185,7 @@ function Navigation() {
                                     textDecoration: 'none'
                                 }}
                             >
-                                React Agency
+                                Percival Est.
                             </Typography>
                         </Box>
                     </Link>
@@ -203,7 +208,6 @@ function Navigation() {
                         >
                             home
                         </Link>
-
                         {pages.map((page) => (
                             <Link 
                                 key={page}
@@ -221,7 +225,6 @@ function Navigation() {
                                 {page}
                             </Link>
                         ))}
-
                     </Box>
                 </Toolbar>
             </Container>
